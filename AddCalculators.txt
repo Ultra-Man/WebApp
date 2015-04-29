@@ -14,4 +14,6 @@ begin
 				'Pat where Id=%d) as t1',
 				[PatId.AsInteger]);
 	AddFieldCalculator(qry,'PatID','t1.ID','PatName');
+	
+	// don't want to add this to new project
 end;
