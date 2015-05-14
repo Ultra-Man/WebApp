@@ -2,8 +2,11 @@
 
 var TcblControllers = angular.module('TcblControllers', []);
 
-TcblControllers.controller('TeamCtrl', ['$scope', 'Schedule', function ($scope, Schedule) {
+TcblControllers.controller('TeamCtrl', ['$scope', '$http', function ($scope, $http) {
 
-    $scope.fSchedules = Schedule.getName();
+    $http.get('data/tables/player.json').success(
+        function (data) {
+            $scope.fSchedule = data
+        });
     
 }]);

@@ -1,4 +1,19 @@
-<div>
-here <br />
-{{fSchedules}}
-</div>	
+<div class="container">
+  <h2>Contextual Classes</h2>
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat = "Schedule in fSchedule">
+      <tr class="info">
+        <td>{{Schedule.firstName}}</td>
+        <td>{{Schedule.lastName}}</td>
+        <td>{{Schedule.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
