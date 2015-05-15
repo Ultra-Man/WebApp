@@ -1,19 +1,21 @@
-<div class="container">
-  <h2>Contextual Classes</h2>
-    <table class="table">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody ng-repeat = "Schedule in fSchedule">
-      <tr class="info">
-        <td>{{Schedule.firstName}}</td>
-        <td>{{Schedule.lastName}}</td>
-        <td>{{Schedule.email}}</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="container marketing">
+    <div class="row">
+        <h2>Contextual Classes</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="Schedule in fSchedule">
+                <tr class="info">
+                    <td>{{Schedule.id}}</td>
+                    <td>{{Schedule.name}}</td>
+                    <td>{{Schedule.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
