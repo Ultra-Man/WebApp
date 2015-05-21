@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mappings version="3.2">
+    <entity table="Player">
+        <a f="Id" />
+		<a f="TeamId" />
+        <a f="LastName" nullValue="" />
+        <a f="FirstName" nullValue="" />
+        <a f="Age" nullValue="0" />
+        <a f="Height" nullValue="0" />
+    </entity>
+	<entity table="Team">
+		<a f="Id" />
+		<a f="TeamName" />
+	</entity>
+	<entity table="Game">
+		<a f="Id" />
+		<a f="Team1" />
+		<a f="Team2" />
+		<a f="GameDate" />
+	</entity>	
+	<entity table="Score">
+		<a f="Id" />
+		<a f="PlayerId" />
+		<a f="GameId" />
+		<a f="3PShot" nullValue="0" />
+		<a f="3PScore" nullValue="0" />
+		<a f="2PShot" nullValue="0" />
+		<a f="2PScore" nullValue="0" />
+		<a f="1PShot" nullValue="0" />
+		<a f="1PScore" nullValue="0" />
+		<a f="TotalScore" nullValue="0" />
+		<a f="Block" nullValue="0" />
+		<a f="Steal" nullValue="0" />
+		<a f="Assist" nullValue="0" />
+		<a f="Fault" nullValue="0" />
+	</entity>
+	<entity table="League">
+		<a f="Id" />
+		<a f="Team1" />
+		<a f="Team2" />
+		<a f="GameDate" />
+	</entity>
+    <entity type="Kroll.Pharmacy.Data.AdjNode" table="AdjNode" keyMember="mId" keyType="Auto" changesOnly="True" dataChangedNotificationLevel="Table">
+        <a f="Id" />
+        <a f="Station" nullValue="" />
+        <a f="UseTAPI" />
+        <a f="ComPort" />
+        <a f="Modem" nullValue="" />
+        <a f="NodeType" />
+        <a f="PhonePrefix" nullValue="" />
+        <a f="Priority" />
+        <a f="DataLog" />
+        <a f="TimingLog" />
+        <a f="CertificateFileName" nullValue="" />
+        <a f="CertificatePassword" nullValue="" />
+        <a f="Certificate" nullValue="" />
+        <a f="AdjRouteId" />
+        <a f="StoreId" />
+    </entity>
+</mappings>
